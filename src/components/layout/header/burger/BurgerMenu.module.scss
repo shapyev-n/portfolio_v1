@@ -1,0 +1,92 @@
+.BurgerMenu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 2px solid #6808b888;
+  background: #000000;
+  padding: 20px;
+//   display: none;
+  .content {
+    backdrop-filter: blur(1px);
+    .links {
+      flex-direction: column;
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      padding: 20px 0;
+
+      .link {
+        font-size: 18px;
+        transition: 0.4s;
+        position: relative;
+
+        &:hover,
+        &.active {
+          background: linear-gradient(to bottom, #7b00ff, #0077ff);
+          color: transparent;
+          background-clip: text;
+        }
+
+        span {
+          color: #8629e9;
+          font-size: 14px;
+          font-weight: bold;
+          margin-right: 5px;
+        }
+      }
+
+      .btns {
+        display: flex;
+        gap: 20px;
+
+        button {
+          width: 100px;
+          height: 36px;
+          background: transparent;
+          font-size: 16px;
+          color: #8629e9;
+          border: solid 1px #8629e9;
+          font-weight: 100;
+          border-radius: 5px;
+          transition: 0.4s;
+          cursor: pointer;
+
+          &:hover {
+            font-size: 18px;
+          }
+        }
+      }
+      .social {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        a{
+            color: #8629e9;
+            font-size: 20px;
+            transition: 0.5s;
+            &:hover{
+                translate: 0 -10px;
+            }
+        }
+      }
+      .close_btn {
+        position: absolute;
+        right: 0;
+        top: -10px;
+        font-size: 35px;
+        rotate: 45deg;
+        color: red;
+        background: none;
+        border: none;
+        user-select: none;
+        cursor: pointer;
+        transition: 0.4s;
+        &:hover {
+          rotate: 135deg;
+        }
+      }
+    }
+  }
+}

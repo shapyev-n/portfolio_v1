@@ -1,0 +1,119 @@
+.ContactSection {
+  padding-block: 100px;
+  min-height: 100vh;
+
+  .content {
+    padding-inline: 10%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    .whats_next {
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+      user-select: none;
+
+      span {
+        color: #680ec9;
+        font-size: 16px;
+        margin-top: auto;
+      }
+
+      h4 {
+        color: #680ec9;
+        font-size: 18px;
+      }
+    }
+
+    h1 {
+      font-size: 4.5vw;
+    }
+
+    p {
+      max-width: 600px;
+      text-align: center;
+      line-height: 24px;
+      letter-spacing: 0.5px;
+      color: #ffffffa9;
+    }
+
+    form {
+      max-width: 400px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-block: 20px;
+
+      span {
+        color: #8629e9;
+        font-size: 16px;
+      }
+
+      input {
+        height: 40px;
+        padding-inline: 14px;
+        border-radius: 6px;
+        border: none;
+
+        background: #1d1c1c;
+
+        &:focus {
+          border: none;
+          outline: none;
+          border-top: 2px solid #8629e9;
+          border-bottom: 2px solid #8629e9;
+        }
+      }
+
+      textarea {
+        // min-width: 400px;
+        max-width: 400px;
+        min-height: 150px;
+        max-height: 400px;
+        background: #1d1c1c;
+        padding: 20px 14px;
+        border-radius: 6px;
+        border: none;
+
+        &:focus {
+          outline: none;
+          border-top: 2px solid #8629e9;
+          border-bottom: 2px solid #8629e9;
+        }
+      }
+
+      button {
+        height: 50px;
+        border-radius: 6px;
+        border: 1px solid #8629e9;
+        background: transparent;
+        transition: 0.5s;
+        cursor: pointer;
+
+        color: #8629e9;
+        font-size: 16px;
+
+        &:hover {
+          box-shadow: #8629e9 10px 10px 2px 0px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .ContactSection {
+    .content {
+      padding-inline: 10px;
+
+      h1 {
+        font-size: 7.5vw;
+      }
+    }
+  }
+}

@@ -1,0 +1,200 @@
+.AboutPage {
+  padding-block: 50px;
+  min-height: 100vh;
+
+  .content {
+    padding-inline: 12%;
+
+    .about_me {
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+      user-select: none;
+      padding-block: 50px;
+
+      span {
+        color: #8629e9;
+        font-size: 16px;
+        margin-top: auto;
+      }
+
+      h1 {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: #ffffffcb;
+
+        hr {
+          width: 250px;
+          border-bottom: #ffffff7a solid 1px;
+        }
+      }
+    }
+
+    .box_about {
+      display: flex;
+
+      .box_txt {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        p {
+          max-width: 500px;
+          line-height: 24px;
+          color: #ffffffa9;
+
+          span {
+            color: #8629e9;
+          }
+        }
+
+        .table {
+          display: flex;
+          gap: 100px;
+          padding: 20px 0;
+
+          p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #ffffff7a;
+            line-height: 40px;
+
+            span {
+              color: #8629e98a;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+
+      .box_img {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        &:hover {
+          .my_atropos {
+            translate: -10px -10px;
+          }
+
+          .border {
+            translate: 20px 20px;
+          }
+        }
+
+        .img {
+          width: 260px;
+          height: 260px;
+          background: linear-gradient(to top, #7b00ff, #0077ff);
+        }
+
+        .border {
+          width: 260px;
+          height: 260px;
+          position: absolute;
+          z-index: -1;
+          translate: 10px 10px;
+          border: 4px solid #7b00ff;
+          transition: 0.5s;
+        }
+      }
+    }
+
+    .my_atropos {
+      width: 260px;
+      height: 260px;
+      transition: 0.5s;
+
+      .txt {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+
+        .startBtn {
+          padding: 10px 20px;
+          border: none;
+          background-color: #2e80ec;
+          color: white;
+          font-weight: 600;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: background-color 0.2s ease;
+
+          &:hover {
+            background-color: #2165c1;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .AboutPage {
+    .content {
+      .about_me {
+        h1 {
+          hr {
+            width: 100px;
+          }
+        }
+      }
+
+      .box_about {
+        flex-direction: column;
+        width: 100%;
+        gap: 50px;
+
+        .box_txt {
+          width: auto;
+
+          p {
+            max-width: 100%;
+            width: 100%;
+          }
+        }
+
+        .box_img {
+          margin: 0 auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .AboutPage {
+    .content {
+      padding-inline: 10px;
+
+      .box_about {
+        .box_txt {
+          width: auto;
+
+          p {
+            max-width: 100%;
+            width: 100%;
+          }
+          .table {
+            justify-content: center;
+            gap: 20px;
+          }
+        }
+
+        .box_img {
+          margin: 0 auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

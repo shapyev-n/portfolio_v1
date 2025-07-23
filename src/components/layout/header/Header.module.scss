@@ -1,0 +1,105 @@
+.Header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  padding-block: 20px;
+  background: #000000c3;
+
+  .content {
+    display: flex;
+    align-items: center;
+
+    .my_atropos {
+      .logo {
+        border: 1px solid #7b00ff;
+        padding-inline: 5px;
+
+        h1 {
+          font-weight: bold;
+          background: linear-gradient(to top, #7b00ff, #0077ff);
+          color: transparent;
+          background-clip: text;
+
+          .logo_txt {
+            color: #7b00ff;
+          }
+        }
+      }
+    }
+
+    .links {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      .link {
+        font-size: 18px;
+        transition: 0.4s;
+
+        &:hover,
+        &.active {
+          background: linear-gradient(to bottom, #7b00ff, #0077ff);
+          color: transparent;
+          background-clip: text;
+        }
+
+        span {
+          color: #8629e9;
+          font-size: 14px;
+          font-weight: bold;
+          margin-right: 5px;
+        }
+      }
+
+      .btns {
+        display: flex;
+        gap: 20px;
+
+        button {
+          width: 100px;
+          height: 36px;
+          background: transparent;
+          font-size: 16px;
+          color: #8629e9;
+          border: solid 1px #8629e9;
+          font-weight: 100;
+          border-radius: 5px;
+          transition: 0.4s;
+          cursor: pointer;
+
+          &:hover {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .burger_menu {
+      display: none;
+      margin-left: auto;
+      font-size: 30px;
+      border: none;
+      background: transparent;
+      user-select: none;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .Header {
+    .content {
+      .links {
+        display: none;
+      }
+
+      .burger_menu {
+        display: block;
+      }
+    }
+  }
+}
