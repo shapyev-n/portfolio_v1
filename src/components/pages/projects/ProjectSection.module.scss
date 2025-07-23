@@ -1,7 +1,7 @@
 .ProjectSection {
   min-height: 100vh;
   padding-block: 50px;
-  overflow-y: scroll;
+  // overflow-y: scroll;
 
   .content {
     padding-inline: 12%;
@@ -157,9 +157,11 @@
 
 @media (max-width: 1000px) {
   .ProjectSection {
+    overflow-y: visible;
     .content {
       .box_projects {
         gap: 500px;
+        padding-bottom: 280px;
 
         .project_block_one,
         .project_block_two {
