@@ -42,16 +42,15 @@ export default function ProjectSection() {
                 <h4>Featured Project</h4>
                 <h1>Sh.N</h1>
                 <p>
-                  EcoMovie - a unique website providing fascinating information
-                  about movies and TV shows. Here you can discover all the
-                  necessary details about your favorite films, actors,
-                  directors, ratings, and much more.
+                  📌 Site description - This is the personal portfolio of
+                  Nuridin Shapyev, Front-End developer. The site was created
+                  with an emphasis on minimalism and ease of navigation.
                 </p>
                 <div className={scss.skills}>
                   <span>React </span>
                   <span>SCSS </span>
                   <span>NextJS </span>
-                  <span>TGbot </span>
+                  <span>TG bot </span>
                   <span>Atropos.js </span>
                 </div>
                 <div className={scss.icons}>
