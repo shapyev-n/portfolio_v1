@@ -25,7 +25,8 @@ export default function ContactSection() {
   });
 
   const messageModel = (data: ISendMessage) => {
-    let messageTG = `Full name: <b>${data.full_name}</b>\n`;
+    let messageTG = `Web site: <b>Portfolio Sh.N</b>\n`;
+    messageTG = `Full name: <b>${data.full_name}</b>\n`;
     messageTG += `Email: <b>${data.email}</b>\n`;
     messageTG += `Message: <b>${data.message}</b>`;
     return messageTG;
